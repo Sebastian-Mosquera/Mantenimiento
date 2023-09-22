@@ -12,21 +12,22 @@
 h1{
     font-family:'roboto', Times, sans-serif;
 }
+
 /* selector por id */
 #word_one{
     font-size: 30px;
-    color: blue;
+    color: rgb(0, 255, 0);
     font-weight: 900;
     text-transform: uppercase;
 }
 #list_options{
-    border: 5px solid rgb(7, 7, 7);
+    border: 5px solid rgb(38, 0, 255);
     margin: 10px;
     border-radius: 10px;
 }
 /* selector de clase */
 .word_group{
-    background-color: brown;
+    background-color: rgba(0, 0, 0, 0.884);
     color: #fff;
     margin: 10px;
 }
@@ -38,4 +39,54 @@ h1{
 .word_group:hover{
     background-color: yellowgreen;
     padding: 5px;
+}
+#title_box{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(23, 216, 126);
+    /* margin: 10px;    */
+    margin:0 0 10px 0;
+    text-align: right;
+    text-transform: uppercase;
+    word-spacing: 25px;
+    letter-spacing: 10px;
+    /* padding: 20px; */
+    padding: 0 20px 0 0;
+    text-align: right;
+    border: 5px double #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #1800f1;
+    box-shadow: -1px -5px 21px 8px rgba(181,36, 181, 36);
+}
+#box_father{
+    background-color: #000;
+    width: 100%;
+    height: 200px;
+    background-image: url(https://bogota.gov.co/sites/default/files/styles/1050px/public/eventos/2021-10/foto_-idrd.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* aplicando media queris al sitio web */
+@media(min-width:800px) and (max-width:1200px){
+    body{
+        background-color: rgba(57, 65, 50, 0.925);
+    }
+    h1{
+        text-align: right;
+    }
+    a¨{
+        color: green;
+        font-size: 50px;
+        padding: 20px;
+    }
+}
+
+@media (max-width:800px){
+    body{
+        background-image: url(https://i.pinimg.com/originals/75/0c/2f/750c2fa4c57aa95755537d9791ce8bd8.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
