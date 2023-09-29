@@ -5,19 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
 <body>
-  <div>
-    <ul>
-        <li><a href="html/tablas.html"><h2>IR A TABLAS</h2></a></li>
-        <li><a href="html/form.html"><h2>IR A FORMULARIOS</h2></a></li>
-        <li><a href="html/multimedia.html"><h2>IR A MULTIMEDIA</h2></a></li>
-        <li><a href="html/texto.html"><h2>IR A TEXTO</h2></a></li>
-        <li><a href="html/semantica.html"><h2>IR A SEMANTICA</h2></a></li>
-        <li><a href="html/agrupacion.html"><h2>IR A AGRUPACIÓN</h2></a></li>
-        <li><a href="html/estilos.html"><h2>IR A ESTILOS</h2></a></li>
-        <li><a href="html/flexbox.html"><h2>IR A FLEXBOX</h2></a></li>
-    </ul>
+  <div class="background"></div>
+  <div class="centering">
+    <form action="" class="my_form">
+    <div class="login_welcome">
+      <img src="/Multimedia/img/astronauta.avif" width="200px" alt="" class="login">
+      <h1>Iniciar Sesión</h1>
+    </div>
+    <div class="text_field">
+      <label for="">Email</label>
+      <input type="email" id="email" aria-label="Email" placeholder="Ingrese su email" required>
+      <img src="/Multimedia/img/email.png" width="20px; alt="Email Icon" title="Email Icon">
+    </div>
+    <div class="text_field">
+      <label for="">Pasword</label>
+      <input type="password" id="password" aria-label="password" placeholder="Ingrese su email" required>
+      <img src="/Multimedia/img/password.svg" width="20px" alt="Pasword Icon" title="password Icon">
+    </div>
+    <input type="submit" class="my_form_button" value="Loign">
+    <div class="my_form_actions">
+      <div class="my_form_row">
+        <span>¿Olvidaste tu constraseña?</span>
+        <a href="#" title="Recuperar Contraseña">Recupear Contraseña</a>
+      </div>
+      <div class="my_form_signup">
+        <a href="#" title="Crear cuenta">Crear Cuenta</a>
+      </div>
+    </div>
+  </form>  
   </div>
 </body>
 </html>
